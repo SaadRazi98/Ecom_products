@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   get "/products" => "products#index" 
   post "/products" => "products#create"
+  patch "/products/:id" => "products#update"
 end
 
 # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
