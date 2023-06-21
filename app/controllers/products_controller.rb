@@ -6,14 +6,14 @@ class ProductsController < ApplicationController
   end
 
   def create
-    @photo = Photo.create(
-      name: params[:name],
-      category: params[:category],
-      price: params[:price],
-      website_url: params[:website_url],
-      image_url: params[:image_url]
+    @product = Product.create(
+      name: params[:product][:name],
+      category: params[:product][:category],
+      price: params[:product][:price],
+      website_url: params[:product][:website_url],
+      image_url: params[:product][:image_url]
     )
-    render :show
+    redirect_to "/products"
   end
 
   def update

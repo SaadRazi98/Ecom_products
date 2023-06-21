@@ -1,0 +1,31 @@
+/* Custom CSS for the navbar */
+.navbar {
+  background-color: #05a420f4;
+  /* Set the background color */
+}
+
+.navbar-brand {
+  display: flex;
+  /* Align the brand content horizontally */
+  align-items: center;
+  /* Center the brand content vertically */
+  color: #010f1e;
+  /* Set the text color */
+  font-weight: bold;
+  /* Set the font weight */
+  text-decoration: none;
+  /* Remove underline */
+}
+
+.navbar-brand img {
+  margin-right: 2.5px;
+  /* Add some spacing between the image and text */
+}
+
+/* Optional: Add padding or margin to the navbar if needed */
+.navbar {
+  padding: 5px;
+  /* Or use margin instead:
+  margin: 10px;
+  */
+}

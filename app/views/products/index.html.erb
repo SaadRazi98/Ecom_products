@@ -1,0 +1,25 @@
+
+<h3>Your Products and Store</h3>
+<div class="card-deck">
+  <% @products.each do |product| %>
+    <div class="card mb-4" style="width: 18rem;">
+      <% if product.image_url %>
+        <img class="card-img-top" src="<%= product.image_url %>" alt="Card image cap">
+      <% else %>
+        <img class="card-img-top" src="<https://via.placeholder.com/300x200.png?text=No+Image>" alt="Card image cap">
+      <% end %>
+      <div class="card-body" >
+        <h5 class="card-title"><%=  %></h5>
+        <p class="card-text"> <%= product.name %> </p>
+        <p class="card-text">Category: <%= product.category%></p>
+        <p class="card-text">Price: <%= product.price%></p>
+        <p class="card-text">Website: <%= product.website_url%></p>
+        <a href="<%= product.website_url %>" class="btn btn-outline-dark rounded-pill">View Product</a>
+      </div>
+
+
+    </div>
+  <% end %>
+
+
+  <a href="/products/new" class="btn btn-outline-dark rounded-pill">New product</a>
